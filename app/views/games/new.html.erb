@@ -1,0 +1,24 @@
+<h1>Games#new</h1>
+<p>Find me in app/views/games/new.html.erb</p>
+
+<h1>C'est parti pour un nouveau jeu !</h1>
+
+<ul>
+    <% @letters.each do |letter| %>
+       <li> <%= letter %> </li>
+    <% end %>
+</ul>
+
+<form action="score" method="post" class="input_mot">
+<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+<%= hidden_field_tag :letters, @letters %>
+  <div class="input_mot">
+    <label for="name">Enter ton mot ici: </label>
+    <input type="text" name="name" id="name" required>
+  </div>
+  <div class="input_mot">
+    <input type="submit" id="mot_test" value="Joue !">
+  </div>
+</form>
+
+<%= @score %>

@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+
+
+ ul li {
+    display: inline;
+    text-align: center;
+    padding: 2px;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border: black;
+    background-color: brown;
+    }
+
+    form.input_word {
+        display: inline;
+    }
+    
+    div.form-example {
+        display: table-row;
+    }
+    
+    label, input {
+        display: table-cell;
+        margin-bottom: 10px;
+    }
+    
+    label {
+        padding-right: 10px;
+    }
